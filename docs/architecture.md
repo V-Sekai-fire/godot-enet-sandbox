@@ -157,7 +157,7 @@ riscv-toolchain/
 
 | File          | Purpose                  |
 | ------------- | ------------------------ |
-| `protocol.md` | JSON-RPC API reference   |
+| `api.md`      | JSON-RPC API reference   |
 | `build.md`    | Build instructions       |
 | `testing.md`  | Test suite documentation |
 

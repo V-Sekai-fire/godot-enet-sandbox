@@ -1,0 +1,14 @@
+# ENet Python Bridge Dependencies
+# Install with: pip install -r requirements.txt
+
+# ENet Python bindings for Godot ENet protocol
+pyenet-dlts>=1.5
+
+# Optional: For msgpack serialization (used in protocol.py)
+msgpack>=1.0.0
+
+# Development dependencies (optional)
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+mypy>=1.0.0

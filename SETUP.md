@@ -34,7 +34,7 @@ This is a mostly-empty directory that clones [godot-cpp](https://github.com/godo
 cd godot-sandbox/ext/godot-cpp
 git remote add origin https://github.com/godotengine/godot-cpp.git
 git fetch origin
-git branch --set-upstream-to=origin/master master
+git branch --set-upstream-to=origin/main main
 git subrepo push
 ```
 

@@ -94,6 +94,12 @@ python network_bridge.py
 2. Run the scene (F5)
 3. The Python bridge connects via ENet UDP on port 4000
 
+## Documentation
+
+- **[Architecture Guide](docs/architecture.md)** - System design and components
+- **[API Reference](docs/api.md)** - JSON-RPC protocol and methods
+- **[Python Bridge Docs](python-bridge/docs/api.md)** - Client and server APIs
+
 ## License
 
 MIT License - see LICENSE file for details.
@@ -113,5 +119,5 @@ git remote add origin https://github.com/V-Sekai-fire/godot-enet-sandbox.git
 gh repo create V-Sekai-fire/godot-enet-sandbox --public --push --source=. --description="Godot 4.7 ENet Sandbox with RISC-V integration and Python bridge"
 
 # Push
-git push -u origin master
+git push -u origin main
 ```

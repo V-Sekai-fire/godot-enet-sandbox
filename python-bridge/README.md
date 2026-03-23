@@ -83,7 +83,15 @@ The bridge uses JSON-RPC 2.0 over ENet UDP:
 
 ## API Reference
 
-See [API Documentation](docs/api.md) for complete details.
+See the [API Documentation](docs/api.md) for complete details on:
+- `SandboxClient` - Connect and call remote methods
+- `SandboxServer` - Host a sandbox instance
+- JSON-RPC methods - `execute_step`, `load_binary`, `read_memory`, etc.
+- Data types and message formats
+
+## Examples
+
+See [docs/examples/](docs/examples/) for sample code and usage patterns.
 
 ## License
 
