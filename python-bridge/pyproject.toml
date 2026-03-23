@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "godot-enet-bridge"
+version = "0.1.0"
+description = "Python networking bridge for Godot ENet Sandbox - enables UDP communication with Godot instances via ENet"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Godot Sandbox Contributors", email = "contact@libriscv.no"}
+]
+keywords = ["godot", "enet", "sandbox", "riscv", "networking"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Games/Entertainment",
+    "Topic :: Networking",
+]
+
+dependencies = [
+    "pyenet-dlts>=0.1.0",
+    "msgpack>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+godot-enet-bridge = "godot_enet_bridge.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/libriscv/godot-sandbox"
+Documentation = "https://libriscv.no/docs/godot_docs"
+Repository = "https://github.com/libriscv/godot-sandbox"
+Issues = "https://github.com/libriscv/godot-sandbox/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["godot_enet_bridge*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

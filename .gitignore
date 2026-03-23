@@ -1,0 +1,7 @@
+*.so
+*.elf
+build/
+
+# Godot sandbox binaries (gitignored - see architecture.md)
+godot-sandbox/bin/
+godot-sandbox/bin/*.so
