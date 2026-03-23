@@ -1,6 +1,3 @@
-[submodule "riscv-toolchain/libriscv"]
-	path = riscv-toolchain/libriscv
-	url = https://github.com/fwsGonzo/libriscv.git
-[submodule "godot-sandbox/ext/godot-cpp"]
-	path = godot-sandbox/ext/godot-cpp
-	url = https://github.com/godotengine/godot-cpp.git
+[submodule "thirdparty/godot_sandbox"]
+	path = thirdparty/godot_sandbox
+	url = https://github.com/libriscv/godot-sandbox.git

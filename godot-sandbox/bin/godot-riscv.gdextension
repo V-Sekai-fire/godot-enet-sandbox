@@ -1,8 +1,0 @@
-[configuration]
-
-[libraries]
-linux.x86_64 = "res://bin/libgodot_riscv.linux.template_release.double.x86_64.so"
-
-[dependencies]
-
-[icons]
